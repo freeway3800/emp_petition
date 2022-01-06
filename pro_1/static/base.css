@@ -1,0 +1,140 @@
+.body_1{
+    background-color: #fafafa;
+}
+.ground{
+    background-color: #ffffff;
+    width: 50vw;
+    height: 80vh;
+    margin: 10vh auto;    
+    display: grid;
+    border-radius: 20%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    "gr_1 gr_2"
+    "gr_1 gr_2"
+    "gr_1 gr_2"
+    "gr_1 gr_2"
+    "gr_1 gr_3"
+    "gr_1 ."
+    "gr_4 gr_4"
+    ;
+}
+/* gr_1 */
+.gr_1{
+    height: auto;
+    width: auto;
+    position: relative;
+    grid-area: gr_1;
+}
+
+.gr_1 img:nth-child(1){
+    position: absolute;
+    margin: 2%;
+    height: auto;
+    width: 60%;
+    border-radius: 10%;
+}
+
+.gr_1 img:nth-child(2){
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    width: 60%;
+    border-radius: 20%;
+}
+
+.gr_1 img:nth-child(3){
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 60%;
+    border-radius: 50%;
+}
+
+/* gr_2 */
+.gr_2{
+    border: 10px;
+    grid-area: gr_2;
+    text-align: center;
+    border: 0.5px solid gray;
+}
+
+.gr_2 h1{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Shizuru', cursive;
+    font-family: 'Yuji Hentaigana Akebono', cursive;
+    margin-bottom: 10vh;
+}
+
+.format_border{
+    position: relative;
+    margin: 5%;
+    text-align: left;
+}
+
+.format_border input{
+    background-color: #e8f0fe;
+    width: 90%;
+    height: 3vh;
+}
+#user_id{
+    margin-bottom: 10px;
+    border: 0.5px solid black;
+}
+#password_{
+    position: relative;
+    width: 90%;
+    height: 80%;
+}
+#password_ input{
+    position:absolute;
+    border: 1px solid black;
+    
+}
+
+#password_ input:nth-child(1){
+    left: 0;
+    width: 70%;
+    
+}
+#password_ input:nth-child(2){
+    right: 0;
+    font-size: 2px;
+    width: 28%;
+    height: auto;
+}
+#submit_1{
+    text-align: center;
+    position: absolute;
+    top: 8vh;
+    margin: 1rem 0;
+    width: 100%;
+    height: auto;
+}
+#submit_1 input:nth-child(1){
+    background-color: #0095f6;
+    border-radius: 0.3em;
+}
+#submit_1 p{
+    color: gray;
+}
+#submit_1 a div{
+    border: none;
+    color: rgb(36, 21, 245);
+    font-size: 0.8rem;
+}
+
+/* gr_3 */
+.gr_3{
+    text-align: center;
+    font-size: 1rem;
+    grid-area: gr_3;
+    height: auto;
+    width: auto;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px;
+    border: 0.5px solid gray;
+}
+
