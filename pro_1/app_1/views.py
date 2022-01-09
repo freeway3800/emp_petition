@@ -1,10 +1,11 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 def main_home(request):
     return render(request, '../templates/base.html')
 
+def password_que(request):
+    return render(request, '../templates/password_que.html')
 
-"""
-from django.http import HttpResponse
-def main_home(request):
-    return HttpResponse("Hello, world. You're at the polls index.")"""
+def index(request):
+    return HttpResponse("Hello, world. You're at the polls index.")
